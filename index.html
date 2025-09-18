@@ -3,84 +3,102 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        /*Normalización, hace que se vea igual en todos los navegadores*/
         * {
-            /*Con esto se elimina todos los formatos de los navegadores, el asterisco dice a todos los navegadores*/
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            /* */
         }
 
-        #card {
-            /*border: solid;*/
-            width: 350px;
-            background-color: #1f1f1f;
-            padding: 12px;
-            border-radius: 8px;
+        body {
+            background-color: gold;
         }
 
-        img {
+        .imgPersona {
             border-radius: 50%;
-            text-align: center;
+            width: 10%;
+        }
+
+        .imgPrincipal {
+            border-radius: 10px;
             width: 50%;
+            display: block;
+            flex-direction: column;
+        }
+
+        .formatoGeneral {
+            background-color: white;
+            padding: 15px;
+            border: solid;
+            border-radius: 10px;
+            margin-top: 50px;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+        .boton {
+            padding-bottom: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+            background-color: gold;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            border: none;
+        }
+
+        .fecha {
+            size: 8px;
+            font-family:'Times New Roman', Times, serif;
             margin-bottom: 15px;
         }
 
-        h1 {
-            color: white;
-            text-align: center;
-            margin-bottom: 12px;
+        .h1 {
+            margin-bottom: 15px;
         }
 
-        h2 {
-            color: greenyellow;
-            text-align: center;
-            font-size: 14px;
-            font-family: Arial, Helvetica, sans-serif;
+        p {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            size: 9;
+            line-height: 25px;
+            margin-top: 15px;
+            margin-bottom: 15px;
         }
 
-        p{
-            color: white;
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-            margin-top: 24px;
-            margin-bottom: 24px;
+        .autor {
+            display: flex;
         }
 
-
-        .estiloBoton {
-            width: 100%;  /*Calcula el 100% de caja que lo contiene a los buttons*/
-            height: 36px;
-            background-color: #343334;
-            color: white;
-            border: none; /*Le digo que no quiero que tenga un border*/
-            border-radius: 10px;
-            margin-bottom: 12px;
-            font-weight: 600;
+        .nomAutor {
+            margin-left: 15px;
+            font-weight: 30px;
         }
     </style>
 </head>
 
 <body>
-    <section id="card">
-        <img src="/avatar-jessica.jpeg" />
-        <h1>Jessica Randall</h1>
-        <h2>London, United Kingdom</h2>
-        <p>Front-end developer and avid reader</p>
+    <section class="formatoGeneral">
+        <img src="/imgAmarillo.jpeg" />
 
-        <nav>
-            <button class="estiloBoton">GitHub</button>
-            <button class="estiloBoton">Frontend Mentor</button>
-            <button class="estiloBoton">Linkedln</button>
-            <button class="estiloBoton">Twitter</button>
-            <button class="estiloBoton">Instagram</button>
-        </nav>
+        <section>
+            <button class="boton">Learning</button>
+        </section>
+
+        <section class="fecha">Published 21 Dec 2023</section>
+
+        <h1>HTML & CSS Foundations</h1>
+
+        <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+
+        <section class="autor">
+            <img class="imgPersona" src="/sr.jpeg" alt="Greg Hooper" />
+            <p class="nomAutor">Greg Hooper</p>
+        </section>
 
     </section>
+
 </body>
 
 </html>
