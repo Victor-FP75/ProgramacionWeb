@@ -1,4 +1,4 @@
-# CEVICHE PERUANO
+# CEVICHE PERUANO NORTEÑO
 
 ## Plato tipico en Perú
 
