@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Normalización, hace que se vea igual en todos los navegadores*/
+        * {
+            /*Con esto se elimina todos los formatos de los navegadores, el asterisco dice a todos los navegadores*/
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* */
+        }
+
+        #card {
+            /*border: solid;*/
+            width: 350px;
+            background-color: #1f1f1f;
+            padding: 12px;
+            border-radius: 8px;
+        }
+
+        img {
+            border-radius: 50%;
+            text-align: center;
+            width: 50%;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+
+        h2 {
+            color: greenyellow;
+            text-align: center;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p{
+            color: white;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 24px;
+            margin-bottom: 24px;
+        }
+
+
+        .estiloBoton {
+            width: 100%;  /*Calcula el 100% de caja que lo contiene a los buttons*/
+            height: 36px;
+            background-color: #343334;
+            color: white;
+            border: none; /*Le digo que no quiero que tenga un border*/
+            border-radius: 10px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="card">
+        <img src="avatar-jessica.jpeg" />
+        <h1>Jessica Randall</h1>
+        <h2>London, United Kingdom</h2>
+        <p>Front-end developer and avid reader</p>
+
+        <nav>
+            <button class="estiloBoton">GitHub</button>
+            <button class="estiloBoton">Frontend Mentor</button>
+            <button class="estiloBoton">Linkedln</button>
+            <button class="estiloBoton">Twitter</button>
+            <button class="estiloBoton">Instagram</button>
+        </nav>
+
+    </section>
+</body>
+
+</html>
